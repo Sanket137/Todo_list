@@ -1,38 +1,92 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body{
+  background-color: #9b9b9b;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.todo-body{
+  position: absolute;
+  left: 50%;
+  transform: translate(-49%);
+  background-color: #294b93;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 60px 0px 200px;
+  width: 80rem;
+  border-radius: 20px;
+}
+
+
+.logo-div{
+  margin-top: 5rem;
+}
+.logo{
+  width: 3rem;
+  position: relative;
+  top: -0.85rem;
+  left: -0.95rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+figcaption{
+  display: inline;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+}
+.input-group{
+  height: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-control{
+  text-align: left;
+ 
+}
+
+i{
+  font-size: 2rem;
+}
+/* .add-btn{
+  height: 4rem;
+  width: 6rem;
+} */
+.show-item{
+  margin: 5rem 0;
+}
+h3{
+  color: white;
+  display: inline;
+  text-align: left;
+}
+
+/* .taskCrossed{
+  text-decoration-line: line-through;
+  text-decoration-thickness: 3px;
+} */
+.btnEdtDel{
+  display: inline;
+}
+
+.edit-btn,.del-btn{
+  width: 5rem;
+}
+
+.add-btn{
+  width: 10rem;
+  display: inline;
+  font-size: 2rem;
+}
+.add-i-btn{
+  display: inline;
+  font-size: 1.5rem;
 }
